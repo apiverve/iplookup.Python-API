@@ -10,10 +10,10 @@ class IplookupAPIClient:
         
         self.api_key = api_key
         self.secure = secure
-        self.base_url = 'https://api.apiverve.com/v1.0.9/iplookup'
+        self.base_url = 'https://api.apiverve.com/v1/iplookup'
         self.headers = {
             'x-api-key': self.api_key,
-            'auth-mode': 'pypi'
+            'auth-mode': 'pypi-package'
         }
 
     def execute(self, params=None):
